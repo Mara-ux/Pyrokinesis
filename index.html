@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pyrokinesis</title>
+    
+    <script src="libs/gsap/gsap.min.js" defer></script>
+    <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+    <script src="libs/gsap/ScrollToPlugin.min.js" defer></script>
+    <script src="js/app.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+    <script src="js/tickets.js" defer></script>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+
+    <script src="https://kit.fontawesome.com/7c4c0cbdfa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav__bar">
+            <a href="#main-scr">главная</a>
+            <a href="#discography">дискография</a>
+            <a href="#merch">мерч</a>
+            <a href="#tour">тур</a>
+            <a href="#ticket">билеты</a>
+            <a href="#contacts">контакты</a>            
+        </nav>
+
+        <div class="icon">
+            <div class="fas fa-bars" id="menu__btn"></div>
+        </div>
+    </header>
+
+
+
+
+    <div class="wrapper">
+        <div class="content">
+            <section class="main" id="main-scr">
+                <div class="hero-section">
+                    <div class="container">
+                        <h1 data-speed=".75" class="main-title" id="first">pyrokinesis</h1>
+                        <h1 data-speed=".65" class="main-title" id="secon">pyrokinesis</h1>
+                        <h1 data-speed=".6" class="main-title" id="therd">pyrokinesis</h1>
+                    </div>
+                    <img data-speed=".8" class="hero" src="img/main/pyro.png" alt="">
+                </div>    
+            </section>
+            <section class="discography" id="discography">
+                <div class="portfolio" id="gallary">
+                    <div class="container">
+                        <main class="gallary">
+                            <div data-speed=".9" class="gallary__left">
+                                <div class="gallary__item">
+                                    <div><i class="fa-solid fa-play ctrl-icon" id="atother-bth"></i></div>
+                                    <img class="image" src="img/works/2022.jpg">
+                                    <div class="music-player">
+                                        <h3>Геометрия тьмы</h3>
+                                        <p id="song-title">шерше ля фам</p>
+                                        <audio id="song">
+                                            <source src="songs/Geometry-of-Darkness/шерше ля фам.mp3" type="audio/mpeg">
+                                        </audio>
+                                        <input type="range" value="0" id="progress">
+                                        <div class="controls">
+                                            <div><i class="fa-solid fa-backward" id="backward"></i></div>
+                                            <div><i class="fa-solid fa-play ctrl-icon" id="ctrlIcon"></i></div>
+                                            <div><i class="fa-solid fa-forward" id="forward"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallary__item">
+                                    <div><i class="fa-solid fa-play ctrl-icon" id="atother-bth"></i></div>
+                                    <img class="image" src="img/works/2019.jpg">
+                                    <div class="music-player">
+                                        <h3>моя милая пустота</h3>
+                                        <p id="song-title">-</p>
+                                        <audio id="song">
+                                            <source src="songs/Geometry-of-Darkness/шерше ля фам.mp3" type="audio/mpeg">
+                                        </audio>
+                                        <input type="range" value="0" id="progress">
+                                        <div class="controls">
+                                            <div><i class="fa-solid fa-backward" id="backward"></i></div>
+                                            <div><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                                            <div><i class="fa-solid fa-forward" id="forward"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallary__item">
+                                    <div><i class="fa-solid fa-play ctrl-icon" id="atother-bth"></i></div>
+                                    <img class="image" src="img/works/2018.jpg">
+                                    <div class="music-player">
+                                        <h3>Корми демонов по расписанию</h3>
+                                        <p id="song-title">-</p>
+                                        <audio id="song">
+                                            <source src="songs/Geometry-of-Darkness/шерше ля фам.mp3" type="audio/mpeg">
+                                        </audio>
+                                        <input type="range" value="0" id="progress">
+                                        <div class="controls">
+                                            <div><i class="fa-solid fa-backward" id="backward"></i></div>
+                                            <div><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                                            <div><i class="fa-solid fa-forward" id="forward"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallary__item">
+                                    <div><i class="fa-solid fa-play ctrl-icon" id="atother-bth"></i></div>
+                                    <img class="image" src="img/works/2016.jpg">
+                                    <div class="music-player">
+                                        <h3>eclipse</h3>
+                                        <p id="song-title">-</p>
+                                        <audio id="song">
+                                            <source src="songs/Geometry-of-Darkness/шерше ля фам.mp3" type="audio/mpeg">
+                                        </audio>
+                                        <input type="range" value="0" id="progress">
+                                        <div class="controls">
+                                            <div><i class="fa-solid fa-backward" id="backward"></i></div>
+                                            <div><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                                            <div><i class="fa-solid fa-forward" id="forward"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+    
+                            <div data-speed="1.1" class="gallary__right">
+                                <div class="gallary__item">
+                                    <div><i class="fa-solid fa-play ctrl-icon" id="atother-bth"></i></div>
+                                    <img class="image" src="img/works/2020.jpg">
+                                    <div class="music-player">
+                                        <h3>Питер, чай, не Франция</h3>
+                                        <p id="song-title"></p>
+                                        <audio id="song">
+                                            <source src="songs/spb-tea/pyrokinesis - Письмо и безразличие интро.mp3" type="audio/mpeg">
+                                        </audio>
+                                        <input type="range" value="0" id="progress">
+                                        <div class="controls">
+                                            <div><i class="fa-solid fa-backward" id="backward"></i></div>
+                                            <div><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                                            <div><i class="fa-solid fa-forward" id="forward"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallary__item">
+                                    <div><i class="fa-solid fa-play ctrl-icon" id="atother-bth"></i></div>
+                                    <img class="image" src="img/works/2019.2.jpg">
+                                    <div class="music-player">
+                                        <h3>акустический</h3>
+                                        <p id="song-title"></p>
+                                        <audio id="song">
+                                            <source src="songs/Geometry-of-Darkness/шерше ля фам.mp3" type="audio/mpeg">
+                                        </audio>
+                                        <input type="range" value="0" id="progress">
+                                        <div class="controls">
+                                            <div><i class="fa-solid fa-backward" id="backward"></i></div>
+                                            <div><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                                            <div><i class="fa-solid fa-forward" id="forward"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallary__item">
+                                    <div><i class="fa-solid fa-play ctrl-icon" id="atother-bth"></i></div>
+                                    <img class="image" src="img/works/2017.jpg">
+                                    <div class="music-player">
+                                        <h3>терновый венец эволюции</h3>
+                                        <p id="song-title"></p>
+                                        <audio id="song">
+                                            <source src="songs/Geometry-of-Darkness/шерше ля фам.mp3" type="audio/mpeg">
+                                        </audio>
+                                        <input type="range" value="0" id="progress">
+                                        <div class="controls">
+                                            <div><i class="fa-solid fa-backward" id="backward"></i></div>
+                                            <div><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                                            <div><i class="fa-solid fa-forward" id="forward"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallary__item">
+                                    <div><i class="fa-solid fa-play ctrl-icon" id="atother-bth"></i></div>
+                                    <img class="image" src="img/works/2015.jpg">
+                                    <div class="music-player">
+                                        <h3>black roze x red roze</h3>
+                                        <p id="song-title"></p>
+                                        <audio id="song">
+                                            <source src="songs/Geometry-of-Darkness/шерше ля фам.mp3" type="audio/mpeg">
+                                        </audio>
+                                        <input type="range" value="0" id="progress">
+                                        <div class="controls">
+                                            <div><i class="fa-solid fa-backward" id="backward"></i></div>
+                                            <div><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                                            <div><i class="fa-solid fa-forward" id="forward"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </main>
+                    </div>
+                    <div data-speed="1.3" class="btn">
+                        <a href="#"><span>Синглы</span></a>
+                    </div>
+                </div>
+                
+                
+            </section>
+
+            <section data-speed="1.3" class="merch" id="merch"> 
+                <div class="descr">
+                    <div class="logo">мерч</div>
+                    <p>я уже не знаю что мне сюда писать, просто любите Андрюшу Пирокинезиса и покупайте мерч</p>
+                </div>
+            
+                <div class="swiper slider slider_main">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide slider__item">
+                            <div class="slider__img" data-swiper-parallax="20%" style="background-image: url(img/merch/1.jpg);"></div>
+                        </div>
+                        <div class="swiper-slide slider__item">
+                            <div class="slider__img" data-swiper-parallax="30%" style="background-image: url(img/merch/2.jpg);"></div>
+                        </div>
+                        <div class="swiper-slide slider__item">
+                            <div class="slider__img" data-swiper-parallax="20%" style="background-image: url(img/merch/3.jpg);"></div>
+                        </div>
+                        <div class="swiper-slide slider__item">
+                            <div class="slider__img" data-swiper-parallax="30%" style="background-image: url(img/merch/4.jpg);"></div>
+                        </div>
+                        <div class="swiper-slide slider__item">
+                            <div class="slider__img" data-swiper-parallax="20%" style="background-image: url(img/merch/5.jpg);"></div>
+                        </div>
+                        <div class="swiper-slide slider__item" id="merch-btn-cont">
+                            <div data-speed="1.3" class="btn" id="merch-btn">
+                                <a href="https://vk.com/market-60154984?screen=group"><span>Больше<br>товаров</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section data-speed="1.3" class="tour" id="tour">
+                <div class="contain">
+                    <div class="gallary">
+                        
+                        <div class="frame"></div>
+
+                        <div class="frame frame_bg">
+                            <div class="frame__content">
+                                <h2>Тур</h2>
+                            </div>
+                        </div>
+            
+                        <div class="frame">
+                            <div class="frame__content text-right">
+                                <h3>Эдельвейс </h3>
+                                <p>Москва, Summer Sound, Дизайн Завод, 23.07.2024</p>
+                            </div>
+                        </div>
+
+                        <div class="frame frame_bg">
+                            <div class="frame__content">
+                                <video class="frame__media frame-media_left" src="video/Pyrokinesis - Эдельвейс (Москва, Summer Sound, Дизайн Завод, 23.07.2024).mp4" autoplay loop muted></video>
+                            </div>
+                        </div>
+                        
+                        <div class="frame"></div>
+
+                        <div class="frame">
+                            <div class="frame__content text-left">
+                                <h3>Звёзды все принадлежат богам </h3>
+                                <p>Москва, Summer Sound, Дизайн Завод, 23.07.2024</p>
+                            </div>
+                        </div>
+                        
+                        <div class="frame frame_bg">
+                            <div class="frame__content">
+                                <video class="frame__media frame-media_right" src="video/Pyrokinesis - Звёзды все принадлежат богам (Москва, Summer Sound, Дизайн Завод, 23.07.2024).mp4" autoplay loop muted></video>
+                            </div>
+                        </div>
+                        
+                        <div class="frame"></div>
+
+                        <div class="frame">
+                            <div class="frame__content text-right">
+                                <h3>Я краснею при тебе как… </h3>
+                                <p>Москва, Summer Sound, Дизайн Завод, 23.07.2024</p>
+                            </div>
+                        </div>
+            
+                        <div class="frame frame_bg">
+                            <div class="frame__content">
+                                <video class="frame__media frame-media_left" src="video/Pyrokinesis - Я краснею при тебе как… (Москва, Summer Sound, Дизайн Завод, 23.07.2024).mp4" autoplay loop muted></video>
+                            </div>
+                        </div>
+                        
+                        <div class="frame"></div>
+
+                        <div class="frame">
+                            <div class="frame__content text-left">
+                                <h3>Kerrigan</h3>
+                                <p>Москва, Summer Sound, Дизайн Завод, 23.07.2024</p>
+                            </div>
+                        </div>
+            
+                        <div class="frame frame_bg">
+                            <div class="frame__content">
+                                <video class="frame__media frame-media_right" src="video/Pyrokinesis - Kerrigan (Москва, Summer Sound, Дизайн Завод, 23.07.2024).mp4" autoplay loop muted></video>
+                            </div>
+                        </div>
+                        
+                        <div class="frame"></div>
+
+                        <div class="frame">
+                            <div class="frame__content text-right">
+                                <h3>Сигарета без кнопки</h3>
+                                <p>Пенза 08.09.2024</p>
+                            </div>
+                        </div>
+            
+                        <div class="frame frame_bg">
+                            <div class="frame__content">
+                                <video class="frame__media frame-media_left" src="video/Пенза 08.09.2024 Сигарета без кнопки.mp4" autoplay loop muted></video>
+                            </div>
+                        </div>
+                        
+                        <div class="frame"></div>
+
+                        <div class="frame">
+                            <div class="frame__content text-left">
+                                <h3>Зависимость</h3>
+                            </div>
+                        </div>
+            
+                        <div class="frame frame_bg">
+                            <div class="frame__content">
+                                <video class="frame__media frame-media_right" src="video/Зависимость.mp4" autoplay loop muted></video>
+                            </div>
+                        </div>
+
+                        <div class="frame"></div>
+
+                        <div class="frame frame_bg">
+                            <div class="frame__content">
+                                <video class="frame__media frame-media_left" src="video/да хозяйка.mp4" autoplay loop muted></video>
+                            </div>
+                        </div>
+                                   
+                        <div class="frame"></div>
+
+                        <div class="frame frame_bg">
+                            <div class="frame__content">
+                                <video class="frame__media frame-media_right" src="video/лапки.mp4" autoplay loop muted></video>
+                            </div>
+                        </div>
+
+                        <div class="frame"></div>
+
+                        <div class="frame frame_bg">
+                            <div class="frame__content">
+                                <video class="frame__media frame-media_left" src="video/цветами радуги.mp4" autoplay loop muted></video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            
+            </section>
+            
+            <section data-speed="1.3" class="tickets" id="ticket">
+                <div class="row">
+                    <div class="colon">
+                        <h4>Санкт<br>Петербург</h4>
+                        <p>Юбилейный<br>13.04.25<br>концерт</p>
+                        <button class="tickets-btn" popovertarget="spb">Билеты</button>
+                        <a href="https://vk.com/event225697910"><i class="fa-brands fa-vk" id="vk"></i></a>
+                    </div>
+                    <div class="colon">
+                        <h4>Москва</h4>
+                        <p>ЦСКА Арена<br>16.05.25<br>концерт</p>
+                        <button class="tickets-btn" popovertarget="msk">Билеты</button>
+                        <a href="https://vk.com/event228206194"><i class="fa-brands fa-vk" id="vk"></i></a>
+                    </div>
+                </div>
+                <div class="pop" id="spb" popover>
+                    <form id="form">
+                        <h4>Санкт-Петербург</h4>
+                        <p>Юбилейный 13.04.25 концерт</p>
+                        <div class="inputBox">
+                            <span class="fas fa-user"></span>
+                            <input type="text" id="name" placeholder="ФИО">
+                        </div>
+                        <div class="inputBox">
+                            <span class="fas fa-phone"></span>
+                            <input type="number" id="phone" placeholder="Номер">
+                        </div>
+                        <div class="inputBox">
+                            <span class="fa-solid fa-gift"></span>
+                            <input type="text" id="gift" placeholder="Промокод">
+                        </div>
+                        <p class="succes disp" id="sucs">Сообщение отправлено!</p>
+                        <p class="error err" id="sucs">Произошл ошибка, повторите позже</p>
+                        <input type="submit" value="Отаправить"  class="tickets-btn">
+                    </form>   
+                </div>
+                <div class="pop" id="msk" popover>
+                    <form id="form2">
+                        <h4>Москва</h4>
+                        <p>ЦСКА Арена 16.05.25 концерт</p>
+                        <div class="inputBox">
+                            <span class="fas fa-user"></span>
+                            <input type="text" id="name" placeholder="ФИО">
+                        </div>
+                        <div class="inputBox">
+                            <span class="fas fa-phone"></span>
+                            <input type="number" id="phone" placeholder="Номер">
+                        </div>
+                        <div class="inputBox">
+                            <span class="fa-solid fa-gift"></span>
+                            <input type="text" id="gift" placeholder="Промокод">
+                        </div>
+                        <p class="succes disp" id="sucs">Сообщение отправлено!</p>
+                        <p class="error err" id="sucs">Произошл ошибка, повторите позже</p>
+                        <input type="submit" value="Отаправить"  class="tickets-btn">
+                    </form>   
+                </div>
+            </section>
+            <footer data-speed="1.3" id="contacts">
+                <h4>Менеджер: <a href="https://vk.com/vadibastard">Владислав Беседин</a></h4>
+                <h4>Связаться с нами: pyrokinesisbooking@gmail.com</h4>
+                <div class="icons-foot">
+                    <a href="https://vk.com/pyrokinesis"><i class="fa-brands fa-vk" id="vk"></i></a>
+                    <a href="https://t.me/pyrokinesistg"><i class="fa-brands fa-telegram" id="vk"></i></a>
+                    <a href="https://www.instagram.com/andrushapyro/"><i class="fa-brands fa-instagram" id="vk"></i></i></a>
+                    <a href="https://www.youtube.com/@officialpyrokinesis/featured"><i class="fa-brands fa-youtube" id="vk"></i></a>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+
+
+    
+
+</body>
+</html>
