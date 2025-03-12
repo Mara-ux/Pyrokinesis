@@ -809,7 +809,7 @@ footer #vk{
 
     .main-title{
         z-index: 0;
-        font-size: calc(var(--index)*3.5);
+        font-size: calc(var(--index)*3);
         letter-spacing: calc(var(--index));
         transform: rotate(-9.5deg);
         position: absolute;
