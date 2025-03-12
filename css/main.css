@@ -744,8 +744,8 @@ footer #vk{
 
     .main-title{
         z-index: 0;
-        font-size: calc(var(--index)*4.5);
-        letter-spacing: 2vw;
+        font-size: calc(var(--index)*4);
+        letter-spacing: 1vw;
         transform: rotate(-9.5deg);
         position: absolute;
         text-align: justify;
