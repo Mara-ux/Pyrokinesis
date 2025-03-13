@@ -803,7 +803,7 @@ footer #vk{
     .hero{
         width: calc(var(--index)*30);
         position: absolute;
-        left: 20%;
+        left: 10%;
 
     }
 
