@@ -801,7 +801,7 @@ footer #vk{
 @media (max-width:767px){
 
     .hero{
-        width: calc(var(--index)*30);
+        width: calc(var(--index)*27);
         position: absolute;
         left: 10%;
 
